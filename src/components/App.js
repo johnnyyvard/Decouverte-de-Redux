@@ -1,11 +1,11 @@
 import React from 'react';
-import NavBar from './NavBar'
-import ToDoList from './ToDoList'
-import { BrowserRouter, Switch, Route } from 'react-router-dom'
+import NavBar from './NavBar';
+import ToDoList from './ToDoList';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import AddTask from './AddTask';
 // import initialData from '../initialData';
-// import uniqueid from 'uniqueid'
-// import Fetching from './Fetching'
+// import uniqueid from 'uniqueid';
+// import Fetching from './Fetching';
 
 class App extends React.Component {
 
@@ -74,11 +74,8 @@ class App extends React.Component {
     //     console.log('Bonjour de getSnapshotBeforeUpdate')
     // }
 
-
-
     render() {
         // console.log('Bonjour de render')
-
         return (
             <section id="todo">
                 {/* {this.state.fetching? <Fetching /> : null} */}
@@ -88,11 +85,10 @@ class App extends React.Component {
                         <Route path="/:filter?" component={ToDoList} />
                     </Switch>
                     <NavBar onDeleteCompleted={this.onDeleteCompleted} />
-
                 </BrowserRouter>
             </section>
         )
     }
 }
 
-export default App
+export default App;

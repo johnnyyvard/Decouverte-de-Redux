@@ -1,7 +1,7 @@
-import React from 'react'
-import { connect } from 'react-redux'
-import uniqueid from 'uniqueid'
-import { addTask } from '../actions'
+import React from 'react';
+import { connect } from 'react-redux';
+import uniqueid from 'uniqueid';
+import { addTask } from '../actions';
 
 
 class AddTask extends React.Component {
@@ -43,4 +43,4 @@ const mapDispatchToProps = (dispatch) => {
     }
 }
 
-export default connect(null, mapDispatchToProps)(AddTask)
+export default connect(null, mapDispatchToProps)(AddTask);
